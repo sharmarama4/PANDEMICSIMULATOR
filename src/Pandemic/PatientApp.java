@@ -12,8 +12,6 @@ public class PatientApp {
 
     public static void main(String[] args) {
 
-
-
         List<Patient> patientList = Patient.getAllPatients();
         patientList.forEach(System.out::println);
         System.out.println("----");
@@ -83,7 +81,6 @@ public class PatientApp {
                     "Willy Wonka", 70, 40, true, true));
             patientMap.put(noVirus, new Patient("030801321",
                     "Gringoire Lune", 80, 36, true, true));
-
 
             for (Map.Entry<List<Patient>, Patient> category : patientMap.entrySet()) {
                 System.out.println(category.getKey() + " " + category.getValue());
